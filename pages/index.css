@@ -162,7 +162,7 @@
   color: white;
 }
 
-.recepies__videos {
+.recipes__videos {
   padding-top: 80px;
   padding-bottom: 215px;
   gap: 40px;
@@ -170,7 +170,7 @@
   justify-content: center;
 }
 
-.recepies__video-items {
+.recipes__video-item {
   display: flex;
   flex-direction: column;
 }
@@ -181,7 +181,7 @@
   height: 273px;
 }
 
-.video__caption {
+.recipes__videos-caption {
   display: flex;
   justify-content: space-between;
   margin: 0;
