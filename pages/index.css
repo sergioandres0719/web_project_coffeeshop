@@ -14,12 +14,14 @@
   background-color: #ffffff;
   background-image: url(../images/background_header.svg);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -49,11 +51,6 @@
   line-height: 20px;
 }
 
-.header__content {
-  display: flex;
-  justify-content: space-between;
-}
-
 .header__title {
   padding-top: 183px;
   padding-left: 80px;
@@ -73,10 +70,13 @@
 }
 
 .header__image {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   height: 568px;
   width: 646px;
-  margin-right: 5px;
-  padding-top: 100px;
+  top: 124px;
+  right: 5px;
 }
 
 .span-accent {
@@ -88,7 +88,7 @@
   color: #2f80ed;
 }
 
-.header__title_second-line {
+.second__line {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -103,12 +103,16 @@
   padding-left: 80px;
 }
 
-.header__footer-list-item {
-  list-style-type: none;
+.header__time {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 80px;
+  bottom: 40px;
 }
 
-.header__footer-column {
-  align-content: flex-end;
+.header__paragraph {
+  margin: 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -117,12 +121,11 @@
   color: #838383;
 }
 
-.header__footer-list {
-  padding: 0;
-}
-
-.header__footer-adress {
-  padding-right: 80px;
+.header__adress {
+  display: flex;
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
   margin: 0;
 }
 
@@ -147,7 +150,7 @@
   color: white;
 }
 
-.recipes__description {
+.recipes__subtitle {
   margin-top: 24px;
   margin-left: 80px;
   max-width: 438px;
@@ -159,7 +162,7 @@
   color: white;
 }
 
-.video {
+.recepies__videos {
   padding-top: 80px;
   padding-bottom: 215px;
   gap: 40px;
@@ -167,10 +170,7 @@
   justify-content: center;
 }
 
-.video__item {
-}
-
-.video__items {
+.recepies__video-items {
   display: flex;
   flex-direction: column;
 }
@@ -187,13 +187,13 @@
   margin: 0;
   padding-top: 24px;
   font-family: "Inter";
-
   font-style: normal;
-
   font-weight: 500;
-
   font-size: 20px;
-
   line-height: 30px;
   color: white;
+}
+
+p {
+  margin: 0;
 }
