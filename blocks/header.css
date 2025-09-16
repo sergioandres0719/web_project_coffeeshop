@@ -39,7 +39,7 @@
   right: 5px;
 }
 
-.span-accent {
+.header__span-accent {
   font-family: "Noto Serif";
   font-style: italic;
   font-weight: normal;
@@ -48,7 +48,7 @@
   color: #2f80ed;
 }
 
-.second-line {
+.header__second-line {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
